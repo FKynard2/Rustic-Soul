@@ -1,0 +1,336 @@
+{
+  "sections": {
+    "main": {
+      "type": "static-collection",
+      "disabled": true,
+      "blocks": {
+        "filter-1": {
+          "type": "filter",
+          "settings": {
+            "filter_option": "faceted",
+            "show_product_counts": true,
+            "filter_limit": "999",
+            "filter_position": "above_menus",
+            "filter_style": "tags",
+            "grid_categories": "",
+            "custom_ordered_categories": "",
+            "custom_ordered_tags": ""
+          }
+        },
+        "menu-1": {
+          "type": "menu",
+          "settings": {
+            "menu": ""
+          }
+        }
+      },
+      "block_order": [
+        "filter-1",
+        "menu-1"
+      ],
+      "settings": {
+        "show_breadcrumbs": true,
+        "show_collection_image": false,
+        "products_per_page_range": 24,
+        "pagination": "traditional",
+        "sort_by": true,
+        "grid_list": true,
+        "menu_depth_range": 1
+      }
+    },
+    "static-recently-viewed": {
+      "type": "static-recently-viewed",
+      "disabled": true,
+      "settings": {
+        "enable_recently_viewed_products": false
+      }
+    },
+    "static-collection-promo-grid": {
+      "type": "static-collection-promo-grid",
+      "disabled": true,
+      "blocks": {
+        "grid-tile-1": {
+          "type": "promotion",
+          "settings": {
+            "preheading": "Preheading",
+            "preheading_color": "#4d4d4d",
+            "title": "Grid",
+            "heading_color": "#4d4d4d",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "none",
+            "background": "",
+            "opacity": 50
+          }
+        },
+        "grid-tile-2": {
+          "type": "promotion",
+          "settings": {
+            "preheading": "Preheading",
+            "preheading_color": "#4d4d4d",
+            "title": "Grid",
+            "heading_color": "#4d4d4d",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "none",
+            "background": "",
+            "opacity": 50
+          }
+        }
+      },
+      "block_order": [
+        "grid-tile-1",
+        "grid-tile-2"
+      ],
+      "settings": {
+        "enable": false,
+        "title": "Grid",
+        "subheading": "",
+        "heading_color": "#4d4d4d",
+        "subheading_color": "#4d4d4d",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "maintain_aspect_ratio": false,
+        "compress_blocks": false
+      }
+    },
+    "166033009500aa90b6": {
+      "type": "dynamic-search-states",
+      "settings": {
+        "title": "",
+        "subheading": "",
+        "collection_tab": "Browse Locally",
+        "search_tab": "Search The Collective",
+        "heading_color": "#4d4d4d",
+        "subheading_color": "#4d4d4d",
+        "background_color": "",
+        "section_spacing_desktop": 100,
+        "section_spacing_mobile": 36,
+        "placeholder": "Search For Anything Your Heart Desires",
+        "enable_live_search": false,
+        "live_search_content_types": "article,page,product",
+        "search_quick_links": "",
+        "image_accent": "shopify:\/\/shop_images\/Rectangle_118.png",
+        "image_search_icon": "shopify:\/\/shop_images\/search.png",
+        "position": "center-center",
+        "show-overlay": false,
+        "background": "#000000",
+        "opacity": 50
+      }
+    },
+    "1659472271b2a17b59": {
+      "type": "featured-product-1",
+      "disabled": true,
+      "blocks": {
+        "1659472271f26798da-0": {
+          "type": "title",
+          "settings": {}
+        },
+        "1659472271f26798da-1": {
+          "type": "vendor",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "1659472271f26798da-0",
+        "1659472271f26798da-1"
+      ],
+      "settings": {
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "product": "vintage-heirloom-rose-gold-ring",
+        "show_dcb": false,
+        "product_cart_redirect": false,
+        "gallery_aspect_ratio": "tall",
+        "gallery_image_crop": true,
+        "gallery_thumbnail_position": "below",
+        "gallery_video_autoplay": false,
+        "gallery_video_looping": false,
+        "gallery_hover_zoom": "disabled"
+      }
+    },
+    "165947241053c070e3": {
+      "type": "featured-product-2",
+      "disabled": true,
+      "blocks": {
+        "1659472410a0cb570f-0": {
+          "type": "title",
+          "settings": {}
+        },
+        "1659472410a0cb570f-1": {
+          "type": "vendor",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "1659472410a0cb570f-0",
+        "1659472410a0cb570f-1"
+      ],
+      "settings": {
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "product": "vintage-gold-designer-necklace",
+        "show_dcb": true,
+        "product_cart_redirect": false,
+        "gallery_aspect_ratio": "tall",
+        "gallery_image_crop": true,
+        "gallery_thumbnail_position": "below",
+        "gallery_video_autoplay": false,
+        "gallery_video_looping": false,
+        "gallery_hover_zoom": "disabled"
+      }
+    },
+    "1659448557c85b7e1a": {
+      "type": "local-artist-image-text",
+      "blocks": {
+        "16594485571315ce1c-0": {
+          "type": "image_with_text",
+          "settings": {
+            "img_desktop": "shopify:\/\/shop_images\/Screen_Shot_2022-04-15_at_10.08_1.png",
+            "img_position_desktop": "right",
+            "img_width_desktop": 70,
+            "img_height_desktop": "natural",
+            "custom_height_desktop": 500,
+            "img_position_mobile": "top",
+            "img_height_mobile": "natural",
+            "custom_height_mobile": 500,
+            "content_background_color": "#f4f4f4",
+            "preheading": "",
+            "preheading_color": "#4d4d4d",
+            "heading": "AMY JOHNSON",
+            "heading_color": "#a6a47d",
+            "heading_size": "large",
+            "text_content": "<p>Here is some information about amy j. and her biography and how great she is and here motto.  <br\/>Here is some information about amy j. and her biography and how great she is and here motto.  <\/p>",
+            "text_content_color": "#4d4d4d",
+            "button_link": "",
+            "button_text": "Read More",
+            "button_style": "primary",
+            "signpost_color": "#111111",
+            "block_link": false,
+            "text_vertical_position": "middle",
+            "text_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "16594485571315ce1c-0"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "background_color": "",
+        "heading_color": "#4d4d4d",
+        "subheading_color": "#4d4d4d",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "content_spacing": 0,
+        "date-feature": "August 2022"
+      }
+    },
+    "1659457365b62435ae": {
+      "type": "artist-logo-list",
+      "blocks": {
+        "165945736507fde948-0": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pexels-luis-quintero-2001293_1.png",
+            "logo-artist-name": "Yokishona Oni",
+            "link": ""
+          }
+        },
+        "165945736507fde948-1": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-17_at_7.24_1.png",
+            "logo-artist-name": "Daisy Kline",
+            "link": ""
+          }
+        },
+        "165945736507fde948-2": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-17_at_7.28_1.png",
+            "logo-artist-name": "Laura Wade",
+            "link": ""
+          }
+        },
+        "165945736507fde948-3": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-17_at_7.24_2.png",
+            "logo-artist-name": "Brian Cree",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "165945736507fde948-0",
+        "165945736507fde948-1",
+        "165945736507fde948-2",
+        "165945736507fde948-3"
+      ],
+      "settings": {
+        "title": "",
+        "subheading": "",
+        "heading_color": "#4d4d4d",
+        "subheading_color": "#4d4d4d",
+        "background_color": "",
+        "section_spacing_desktop": 0,
+        "section_spacing_mobile": 0
+      }
+    },
+    "166127334444da2461": {
+      "type": "dynamic-featured-product-side-by-side",
+      "settings": {
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36
+      }
+    },
+    "165946605813d57511": {
+      "type": "artist-page-newsletter",
+      "settings": {
+        "title": "Rustic Soul Newsletter",
+        "subheading": "<p>Get updates on what we’re up to, big sales, and more.<\/p>",
+        "heading_color": "#000000",
+        "subheading_color": "#000000",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "desktop_alignment": "left",
+        "mobile_alignment": "top"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "static-recently-viewed",
+    "static-collection-promo-grid",
+    "166033009500aa90b6",
+    "1659472271b2a17b59",
+    "165947241053c070e3",
+    "1659448557c85b7e1a",
+    "1659457365b62435ae",
+    "166127334444da2461",
+    "165946605813d57511"
+  ]
+}

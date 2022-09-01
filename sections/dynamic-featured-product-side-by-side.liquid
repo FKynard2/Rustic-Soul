@@ -1,0 +1,124 @@
+{% style %}
+  #shopify-section-{{section.id}} {
+    background-color: {{ section.settings.background_color }};
+  }
+
+  #shopify-section-{{section.id}} .featured-product--container {
+    padding-top: {{ section.settings.section_spacing_mobile }}px;
+    padding-bottom: {{ section.settings.section_spacing_mobile }}px;
+  }
+
+  @media screen and (min-width: 720px) {
+    #shopify-section-{{section.id}} .featured-product--container {
+      padding-top: {{ section.settings.section_spacing_desktop }}px;
+      padding-bottom: {{ section.settings.section_spacing_desktop }}px;
+    }
+  }
+{% endstyle %}
+
+{% if collection.metafields.custom.featured_product_1 != blank %}
+  {% assign product1 = all_products[collection.metafields.custom.featured_product_1] %}
+  {% assign product2 = all_products[collection.metafields.custom.featured_product_2] %}
+{% else %}
+  {% for product in collection.products limit: 2 %}
+    {% if forloop.index == 1 %}
+      {% assign product1 = product %}
+    {% else %}
+      {% assign product2 = product %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+
+<section
+  class="featured-product--container"
+>
+  <div class="product-side-by-side-wrapper">
+
+    <div class="product-side-by-side product-side-by-side-1">
+      <div class="product-side-by-side-inner" style="background-image: url({{ product1.featured_image | img_url:'1200x' }});">
+        <div class="product-info">
+          <h3><a href="{{ product1.url }}">{{ product1.title }}</a></h3>
+          <p>{{ product1.vendor }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-side-by-side product-side-by-side-2">
+      <div class="product-side-by-side-inner">
+        <div id="prevArrow" class="product-gallery-arrow product-gallery-arrow-prev"><img src="{{ 'prevArrow.png' | asset_img_url:'100x' }}" alt=""></div>
+          <div class="product-gallery-wrapper">
+              <div class="product-gallery-inner">
+                {% for image in product2.images %}
+                  <div class="product-image-wrapper">
+                    <img src="{{ image | img_url:'360x500', crop:'center' }}" alt="">
+                  </div>
+                {% endfor %}
+              </div>
+          </div>
+        <div id="nextArrow" class="product-gallery-arrow product-gallery-arrow-next"><img src="{{ 'nextArrow.png' | asset_img_url:'100x' }}" alt=""></div>
+      
+        <div class="product-info">
+          <h3><a href="{{ product2.url }}">{{ product2.title }}</a></h3>
+          <p>{{ product2.vendor }}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Custom Prod Side-by-Side",
+  "class": "featured-product--section featured-product--section-side-by-side",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Section background color"
+    },
+    {
+      "type": "range",
+      "id": "section_spacing_desktop",
+      "label": "Desktop section spacing",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "section_spacing_mobile",
+      "label": "Mobile section spacing",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 36
+    },
+    {
+      "type": "header",
+      "content": "Product settings"
+    },
+    {
+      "type": "paragraph",
+      "content": "This Section type uses collection metafields to determine the two products to show on this page. You can set them on the admin page of the collection."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Prod Side-by-Side",
+      "category": "Product"
+    }
+  ],
+  "templates": [
+    "index",
+    "collection",
+    "product",
+    "page"
+  ]
+}
+
+{% endschema %}

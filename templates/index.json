@@ -1,0 +1,198 @@
+{
+  "sections": {
+    "165903351330b0e082": {
+      "type": "home-collection-1",
+      "blocks": {
+        "1659033513f69682eb-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-15_at_9.56_3.png",
+            "collection_label": "",
+            "mobile_collection_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "1659033513f69682eb-0"
+      ],
+      "settings": {
+        "title": "",
+        "subheading": "",
+        "heading_color": "#4d4d4d",
+        "subheading_color": "#4d4d4d",
+        "background_color": "",
+        "section_spacing_desktop": 0,
+        "section_spacing_mobile": 36,
+        "label_style": "label-style-heading",
+        "text_alignment": "center",
+        "desktop_collections_per_row": 3,
+        "display_desktop_collections": "2",
+        "desktop_collection_width": "desktop-full-width",
+        "layout_collection_max_width": 1000,
+        "desktop_collection_max_width": 300,
+        "mobile_collections_per_row": 3,
+        "display_mobile_collections": "2",
+        "mobile_collection_width": "mobile-full-width",
+        "mobile_collection_max_width": 80
+      }
+    },
+    "1659028933bacf0e0f": {
+      "type": "search-homepage",
+      "settings": {
+        "title": "WHICH STATE ARE YOU LOOKING FOR ARTISTS IN?",
+        "heading_color": "#4d4d4d",
+        "background_color": "#eae5df",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "placeholder": "Search the entire collective",
+        "enable_live_search": false,
+        "live_search_content_types": "article,page,product",
+        "search_quick_links": "",
+        "position": "center-center",
+        "show-overlay": false,
+        "background": "#000000",
+        "opacity": 50
+      }
+    },
+    "1659033534ad3fa805": {
+      "type": "home-collection-2",
+      "blocks": {
+        "16590335348f77058e-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-15_at_9.56_2.png",
+            "collection_label": "",
+            "mobile_collection_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "16590335348f77058e-0"
+      ],
+      "settings": {
+        "title": "",
+        "subheading": "",
+        "heading_color": "#4d4d4d",
+        "subheading_color": "#4d4d4d",
+        "background_color": "",
+        "section_spacing_desktop": 0,
+        "section_spacing_mobile": 36,
+        "label_style": "label-style-heading",
+        "text_alignment": "center",
+        "desktop_collections_per_row": 3,
+        "display_desktop_collections": "2",
+        "desktop_collection_width": "desktop-full-width",
+        "layout_collection_max_width": 1000,
+        "desktop_collection_max_width": 300,
+        "mobile_collections_per_row": 3,
+        "display_mobile_collections": "2",
+        "mobile_collection_width": "mobile-full-width",
+        "mobile_collection_max_width": 80
+      }
+    },
+    "16590335575c1401ac": {
+      "type": "home-collection-3",
+      "blocks": {
+        "1659033557254f0d42-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-15_at_9.56_1_f4d6b63a-d91d-44cc-a1c9-0d2e8b5f83f1.png",
+            "collection_label": "",
+            "mobile_collection_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "1659033557254f0d42-0"
+      ],
+      "settings": {
+        "title": "",
+        "subheading": "",
+        "heading_color": "#4d4d4d",
+        "subheading_color": "#4d4d4d",
+        "background_color": "",
+        "section_spacing_desktop": 0,
+        "section_spacing_mobile": 36,
+        "label_style": "label-style-heading",
+        "text_alignment": "center",
+        "desktop_collections_per_row": 3,
+        "display_desktop_collections": "2",
+        "desktop_collection_width": "desktop-full-width",
+        "layout_collection_max_width": 1000,
+        "desktop_collection_max_width": 300,
+        "mobile_collections_per_row": 3,
+        "display_mobile_collections": "2",
+        "mobile_collection_width": "mobile-full-width",
+        "mobile_collection_max_width": 80
+      }
+    },
+    "1659106531f20a664e": {
+      "type": "home-collection-mobile",
+      "disabled": true,
+      "blocks": {
+        "165910653048013122-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-15_at_9.56_3.png",
+            "collection_label": "",
+            "mobile_collection_label": ""
+          }
+        },
+        "165910653048013122-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-15_at_9.56_2.png",
+            "collection_label": "",
+            "mobile_collection_label": ""
+          }
+        },
+        "165910653048013122-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-15_at_9.56_1_f4d6b63a-d91d-44cc-a1c9-0d2e8b5f83f1.png",
+            "collection_label": "",
+            "mobile_collection_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "165910653048013122-0",
+        "165910653048013122-1",
+        "165910653048013122-2"
+      ],
+      "settings": {
+        "title": "Collection list",
+        "subheading": "",
+        "heading_color": "#4d4d4d",
+        "subheading_color": "#4d4d4d",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "label_style": "label-style-heading",
+        "text_alignment": "center",
+        "desktop_collections_per_row": 3,
+        "display_desktop_collections": "2",
+        "desktop_collection_width": "desktop-custom-width",
+        "layout_collection_max_width": 1000,
+        "desktop_collection_max_width": 325,
+        "mobile_collections_per_row": 2,
+        "display_mobile_collections": "2",
+        "mobile_collection_width": "mobile-full-width",
+        "mobile_collection_max_width": 80
+      }
+    }
+  },
+  "order": [
+    "165903351330b0e082",
+    "1659028933bacf0e0f",
+    "1659033534ad3fa805",
+    "16590335575c1401ac",
+    "1659106531f20a664e"
+  ]
+}

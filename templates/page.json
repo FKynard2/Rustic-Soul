@@ -1,0 +1,267 @@
+{
+  "sections": {
+    "main": {
+      "type": "static-page",
+      "settings": {}
+    },
+    "16595515498f8240ea": {
+      "type": "about-us-image-text",
+      "blocks": {
+        "165955154900bf630a-0": {
+          "type": "image_with_text",
+          "settings": {
+            "img_position_desktop": "right",
+            "img_width_desktop": 45,
+            "img_height_desktop": "custom",
+            "custom_height_desktop": 400,
+            "img_position_mobile": "top",
+            "img_height_mobile": "custom",
+            "custom_height_mobile": 310,
+            "content_background_color": "#ffffff",
+            "preheading": "",
+            "preheading_color": "#4d4d4d",
+            "heading": "A LITTLE ABOUT US",
+            "heading_color": "#4d4d4d",
+            "heading_size": "large",
+            "text_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.<br\/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.<br\/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.Lorem ipsum dolor sit amet, consectetur ad consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.<\/p>",
+            "text_content_color": "#4d4d4d",
+            "button_link": "",
+            "button_text": "CONTACT US",
+            "button_style": "primary",
+            "signpost_color": "#111111",
+            "block_link": false,
+            "text_vertical_position": "bottom",
+            "text_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "165955154900bf630a-0"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "background_color": "#ffffff",
+        "heading_color": "#4d4d4d",
+        "subheading_color": "#4d4d4d",
+        "section_spacing_desktop": 0,
+        "section_spacing_mobile": 0,
+        "content_spacing": 0
+      }
+    },
+    "165962665567a9c6e4": {
+      "type": "our-team-grid",
+      "blocks": {
+        "1659626655214640f1-0": {
+          "type": "promotion",
+          "settings": {
+            "preheading": "",
+            "preheading_color": "#333333",
+            "title": "Edgar Allen",
+            "heading_color": "#333333",
+            "text": "<p>Use this section to welcome customers to your store, say a bit about your brand, or share news.<\/p>",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "solid",
+            "background": "#f4f6fa",
+            "opacity": 100
+          }
+        },
+        "1659626655214640f1-1": {
+          "type": "promotion",
+          "settings": {
+            "preheading": "",
+            "preheading_color": "#333333",
+            "title": "Jimmie Lee",
+            "heading_color": "#333333",
+            "text": "<p>Use this section to welcome customers to your store, say a bit about your brand, or share news.<\/p>",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "solid",
+            "background": "#f4f6fa",
+            "opacity": 100
+          }
+        },
+        "1659626655214640f1-2": {
+          "type": "promotion",
+          "settings": {
+            "preheading": "",
+            "preheading_color": "#333333",
+            "title": "Amy Lee",
+            "heading_color": "#333333",
+            "text": "<p>Use this section to welcome customers to your store, say a bit about your brand, or share news.<\/p>",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "solid",
+            "background": "#f4f6fa",
+            "opacity": 100
+          }
+        },
+        "1659626655214640f1-3": {
+          "type": "promotion",
+          "settings": {
+            "preheading": "",
+            "preheading_color": "#333333",
+            "title": "Barbie Feif",
+            "heading_color": "#333333",
+            "text": "<p>Use this section to welcome customers to your store, say a bit about your brand, or share news.<\/p>",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "solid",
+            "background": "#f4f6fa",
+            "opacity": 100
+          }
+        }
+      },
+      "block_order": [
+        "1659626655214640f1-0",
+        "1659626655214640f1-1",
+        "1659626655214640f1-2",
+        "1659626655214640f1-3"
+      ],
+      "settings": {
+        "title": "OUR TEAM",
+        "subheading": "<p>Blurb about our team.<\/p>",
+        "heading_color": "#333333",
+        "subheading_color": "#333333",
+        "background_color": "#ffffff",
+        "section_spacing_desktop": 18,
+        "section_spacing_mobile": 0,
+        "maintain_aspect_ratio": false,
+        "compress_blocks": false
+      }
+    },
+    "1659637441a4583f99": {
+      "type": "we-began-image-text",
+      "blocks": {
+        "16596374415167dccd-0": {
+          "type": "image_with_text",
+          "settings": {
+            "img_position_desktop": "left",
+            "img_width_desktop": 50,
+            "img_height_desktop": "custom",
+            "custom_height_desktop": 400,
+            "img_position_mobile": "top",
+            "img_height_mobile": "custom",
+            "custom_height_mobile": 310,
+            "content_background_color": "#ffffff",
+            "preheading": "",
+            "preheading_color": "#4d4d4d",
+            "heading": "HOW WE BEGAN",
+            "heading_color": "#4d4d4d",
+            "heading_size": "large",
+            "text_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.<br\/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.<br\/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.<\/p>",
+            "text_content_color": "#4d4d4d",
+            "button_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#111111",
+            "block_link": false,
+            "text_vertical_position": "middle",
+            "text_alignment": "left"
+          }
+        },
+        "7b512455-f3d2-4690-a7db-cee8ae0cc6a8": {
+          "type": "image_with_text",
+          "settings": {
+            "img_position_desktop": "right",
+            "img_width_desktop": 50,
+            "img_height_desktop": "natural",
+            "custom_height_desktop": 500,
+            "img_position_mobile": "top",
+            "img_height_mobile": "custom",
+            "custom_height_mobile": 310,
+            "content_background_color": "#ffffff",
+            "preheading": "",
+            "preheading_color": "#4d4d4d",
+            "heading": "WHERE WE BEGAN",
+            "heading_color": "#4d4d4d",
+            "heading_size": "large",
+            "text_content": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_content_color": "#4d4d4d",
+            "button_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#111111",
+            "block_link": false,
+            "text_vertical_position": "middle",
+            "text_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "16596374415167dccd-0",
+        "7b512455-f3d2-4690-a7db-cee8ae0cc6a8"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "background_color": "#ffffff",
+        "heading_color": "#4d4d4d",
+        "subheading_color": "#4d4d4d",
+        "section_spacing_desktop": 0,
+        "section_spacing_mobile": 0,
+        "content_spacing": 0
+      }
+    },
+    "1657575726d1f43fdf": {
+      "type": "dynamic-image-with-text-overlay",
+      "settings": {
+        "section_height": "medium",
+        "background_color": "#ffffff",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "position": "center center",
+        "title": "",
+        "text": "",
+        "content_position": "center-center",
+        "overlay_style": "solid",
+        "color": "#ffffff",
+        "overlay_background": "#000000",
+        "overlay_opacity": 50,
+        "link": "",
+        "button_text": ""
+      }
+    },
+    "contact": {
+      "type": "static-page-contact",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "16595515498f8240ea",
+    "165962665567a9c6e4",
+    "1659637441a4583f99",
+    "1657575726d1f43fdf",
+    "contact"
+  ]
+}
