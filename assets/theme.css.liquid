@@ -11551,6 +11551,7 @@ em strong {
   flex-basis: auto;
   flex-grow: 0;
   flex-shrink: 0;
+  display: none;
 }
 
 .cart-title-button {
@@ -11636,8 +11637,8 @@ em strong {
   height: 358px;
   padding: {{ settings.type_size_base | times: 1.25 | divided_by: 16.0 | append: 'rem' }};
   text-align: center;
-  border: 1px solid {{ color_layout_site_background_border_mix | color_modify: 'alpha', 0.15 }};
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.06);
+   {% comment %} border: 1px solid {{ color_layout_site_background_border_mix | color_modify: 'alpha', 0.15 }}; {% endcomment %}
+  {% comment %} box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.06); {% endcomment %}
 }
 
 .cartitems-empty--inner p {

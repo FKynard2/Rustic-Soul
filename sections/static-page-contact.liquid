@@ -1,4 +1,11 @@
 
+{% style %}
+.page-contact--section{
+  background-color: {{section.settings.background_color}}
+}
+ 
+{% endstyle %}
+
 <section  
       class="image-with-text-background background contact-padding"
       {% if section.settings.image != blank %}
@@ -164,7 +171,12 @@
     {
       "type": "image_picker",
       "id": "image",
-      "label": "Image"
+      "label": "Background Image" 
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color"
     }
   ]
 }

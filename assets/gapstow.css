@@ -955,3 +955,10 @@ select::after {
 .contact-padding{
   padding: 10px;
 }
+
+
+/* Use this to move the logo outside of any boxes where the logo covers the content  */
+.margin-top-for-logo-spacing {
+  margin-top: 115px;
+}
+/* endcomment */

@@ -1,3 +1,10 @@
+{% style %}
+.cart--section, .margin-top-for-logo-spacing {
+  margin-top: 140px;
+} 
+{% endstyle %}
+
+
 {% assign is_customer = false %}
 {% if shop.customer_accounts_enabled and customer %}
   {% assign is_customer = true %}

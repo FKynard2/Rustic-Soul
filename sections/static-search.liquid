@@ -51,7 +51,7 @@
   {% if article_count > 0 %}{% assign type_count = type_count | plus: 1 %}{% endif %}
   {% if page_count > 0 %}{% assign type_count = type_count | plus: 1 %}{% endif %}
 
-  <div class="productgrid--outer layout--no-sidebar" data-html>
+  <div class="productgrid--outer layout--no-sidebar margin-top-for-logo-spacing" data-html>
     <div class='processing-overlay'></div>
     <div class="productgrid--wrapper">
       {%- if section.settings.show_breadcrumbs -%}
