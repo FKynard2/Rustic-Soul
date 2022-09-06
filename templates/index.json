@@ -41,6 +41,7 @@
       "type": "search-homepage",
       "settings": {
         "title": "WHICH STATE ARE YOU LOOKING FOR ARTISTS IN?",
+        "title_2": "Search The Collective",
         "heading_color": "#4d4d4d",
         "background_color": "#eae5df",
         "section_spacing_desktop": 50,
@@ -62,7 +63,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-15_at_9.56_2.png",
+            "image": "shopify:\/\/shop_images\/Group_1560.png",
             "collection_label": "",
             "mobile_collection_label": ""
           }
@@ -99,7 +100,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-15_at_9.56_1_f4d6b63a-d91d-44cc-a1c9-0d2e8b5f83f1.png",
+            "image": "shopify:\/\/shop_images\/Group_1563.png",
             "collection_label": "",
             "mobile_collection_label": ""
           }

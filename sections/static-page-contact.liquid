@@ -1,3 +1,27 @@
+
+<section  
+      class="image-with-text-background background contact-padding"
+      {% if section.settings.image != blank %}
+        {% capture background_style %}
+          {% if section.settings.section_height == 'original' %}
+            padding-bottom: {{- 100 | divided_by: section.settings.image.aspect_ratio -}}%;
+          {% endif %}
+          background-position: {{ section.settings.position }};
+        {% endcapture %}
+
+      
+
+        {%
+          include 'rimg',
+          img: section.settings.image,
+          size: '1400x',
+          crop: crop,
+          style: background_style,
+          lazy: settings.lazy_load,
+          background: true
+        %}
+      {% endif %} > 
+
 <article class="site-page" data-template-page data-template-contact>
   <header class="page-masthead">
     <h1 class="page-title">
@@ -10,7 +34,7 @@
       {{ page.content }}
     </div>
   {% endif %}
-<div class= "contact-image">{{ settings.contact-background-image | img_url: '2048x' | img_tag }}</div>
+{% comment %} <div class= "contact-image">{{ settings.contact-background-image | img_url: '2048x' | img_tag }}</div> {% endcomment %}  
 <div class="page-content page-content-contact">
 <h2> Contact Us </h2>
   <p>{{ settings.contact-text}}</p>
@@ -126,7 +150,7 @@
     {% endform %}
   </div>
 </article>
-
+</section>
 {% schema %}
 {
   "name": "Page contact",
@@ -136,6 +160,11 @@
       "type": "header",
       "content": "Contact page",
       "info": "Static section"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
     }
   ]
 }

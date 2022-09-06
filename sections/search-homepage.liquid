@@ -108,12 +108,12 @@
       style="color: {{ section.settings.color }}"
     {% endif %}
     >
-    <div class="search-section-tabs">
-      <div class="search-tab search-tab-1 search-tab-active">
+    <div class="search-section-tabs ">
+      <div class="search-tab search-tab-1  search-tab-active ">
         <a class="home-search-tab-link" data-tab="local">Browse Locally</a>
       </div>
-      <div class="search-tab search-tab-2">
-        <a class="home-search-tab-link" data-tab="site">Search The Collective</a>
+      <div class="search-tab search-tab-2 ">
+        <a class="home-search-tab-link" data-tab="site">Search the Collective</a>
       </div>
     </div>
     <div class="search-section-form">
@@ -130,14 +130,22 @@
         </div>
       {% endif %}
       <div id="stateCollectionDropdown" class="tabbed-search-content tabbed-search-content-active ">
-        <form action="">
-          <select name="" id="">
-          {% for c in collections %}
-            {% if c.template_suffix == "state-pages" %}
-            <option value="{{c.handle}}">{{c.title}}</option>
-            {% endif %}
-          {% endfor %}
+        <form action="" class='custom-select'>
+        
+          <select name="" id=""  >
+          <option value=''class="option-1">BEGIN TYPING YOUR STATE HERE</option>
+
+           
+             {% for c in collections %}
+              {% if c.template_suffix == "state-pages" %}
+              <option  value="{{c.handle}}">{{c.title}} </option>
+             
+              {% endif %}
+            {% endfor %}
+          
+          
           </select>
+           <span class='go-button'>go</span>
         </form>
       </div>
 <div id="liveSearch" class="tabbed-search-content">

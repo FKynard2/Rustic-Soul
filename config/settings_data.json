@@ -80,7 +80,7 @@
     "type_highlights_capitalize": true,
     "type_highlights_spacing": 1,
     "type_button": "twentieth_century_n4",
-    "type_button_capitalize": true,
+    "type_button_capitalize": false,
     "type_button_spacing": 1,
     "type_product_price": "humanist_521_n2",
     "type_product_vendor": "twentieth_century_n4",

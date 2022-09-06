@@ -256,8 +256,22 @@
       font-size: 15px;
       font-weight: 100;
       text-transform: uppercase;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      text-indent: 1px;
+      text-overflow: '';
+    }
+    
+    select::after {
+      content: 'go';
+      position: absolute;
+      top: 0;
+      right: 0;
     }
   }
+  
+
+
   .tabbed-search-content {
     display: none;
     &.tabbed-search-content-active {
@@ -266,7 +280,12 @@
   }
   .home-search-tab-link {
     cursor: pointer;
-  }
+    padding: 16px 65px;
+    width: 100%;
+    display: block;
+    font-size: 22px;
+    white-space: nowrap;
+}
   .home-section--title {
     @media (min-width: 719px) {
       font-size: 4.5vw;
@@ -275,6 +294,7 @@
   .search-section-content {
     margin-right: 310px;
     margin-left: 50px;
+    min-height: 443px;
     @media (max-width: 719px) {
       margin-left: 20px;
       margin-right: 20px;
@@ -298,7 +318,6 @@
     width: 300px;
     border-bottom: 1px solid #d1d3d5;
     text-align: center;
-    padding-bottom: 15px;
     &.search-tab-active {
       border-color: #008060;
       border-width: 3px;

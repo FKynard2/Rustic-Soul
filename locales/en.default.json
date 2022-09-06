@@ -222,7 +222,7 @@
       "email": "Email",
       "phone": "Phone Number",
       "message": "Message",
-      "send": "Send Us A Message",
+      "send": "Send Us a Message",
       "post_success": "Thanks for contacting us. We'll get back to you as soon as possible."
     }
   },
@@ -513,6 +513,22 @@
       "tweet_html": "Connect your Twitter account to engage customers on and off your site!",
       "username": "username",
       "time": "8 hours ago"
+    }
+  },
+  "sections": {
+    "artist-page-newsletter": {
+      "form": {
+        "placeholder": "Email address",
+        "submit": "Subscribe",
+        "success": "Thanks for subscribing!"
+      }
+    },
+    "dynamic-newsletter": {
+      "form": {
+        "placeholder": "Email address",
+        "submit": "Subscribe",
+        "success": "Thanks for subscribing!"
+      }
     }
   }
 }
