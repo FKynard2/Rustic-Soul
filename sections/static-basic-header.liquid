@@ -94,8 +94,8 @@
   >
   <div class="non_profit_container">
     <div class="dark_owl"> {{ 'owl_Dark 1.png' | asset_url | img_tag: 'Dark Owl' }}</div>
-    <p class= "non_profit">WE'RE A NON-PROFIT! LEARN MORE </p><br>
-    <a class="click_here"> HERE</a>
+    <p class= "non_profit"> {{section.settings.non_profit}}</p><br>
+    <a href='/' class="click_here"> HERE</a>
   </div>
 
     <button class="site-header-button site-header-menu-button" href="#" data-menu-toggle>
@@ -265,6 +265,12 @@
   "name": "Header",
   "class": "site-header-wrapper",
   "settings": [
+    {
+      "type": "text",
+      "id": "non_profit",
+      "label": "Logo Header Text",
+      "default": "WE'RE A NON-PROFIT! LEARN MORE"
+    },
     {
       "type": "paragraph",
       "content": "This is the Basic header. If you want to change the header layout, go to the Layout section in the Theme settings tab. [Learn more](https://help.outofthesandbox.com/hc/en-us/articles/4412215709971)"

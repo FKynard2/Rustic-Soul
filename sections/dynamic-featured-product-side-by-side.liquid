@@ -14,6 +14,9 @@
       padding-bottom: {{ section.settings.section_spacing_desktop }}px;
     }
   }
+  .product--section, .margin-top-for-logo-spacing {
+    margin-top: 115px;
+  }
 {% endstyle %}
 
 {% if collection.metafields.custom.featured_product_1 != blank %}
@@ -71,7 +74,7 @@
 {% schema %}
 {
   "name": "Custom Prod Side-by-Side",
-  "class": "featured-product--section featured-product--section-side-by-side",
+  "class": "featured-product--section featured-product--section-side-by-side margin-top-for-logo-spacing",
   "settings": [
     {
       "type": "color",

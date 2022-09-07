@@ -26,9 +26,9 @@
       </div>
       {% elsif block.type == 'image_picker' %}
         {% if block.settings.logo_image != blank %}
-          <div class="footer-logo">
-            <img src="{{ block.settings.logo_image | img_url: 'master' }}">
-          </div>
+          <a href='/' class="footer-logo">
+            <img src="{{ block.settings.logo_image | img_url: 'master' }}"> 
+          </a>
         {% endif %}
   {% elsif block.type == 'rich_text' or block.type == 'newsletter' %}
     {% if block.settings.title != blank %}
