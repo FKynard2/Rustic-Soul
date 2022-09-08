@@ -253,7 +253,9 @@
     },
     "contact": {
       "type": "static-page-contact",
-      "settings": {}
+      "settings": {
+        "background_color": "#a6a47d"
+      }
     }
   },
   "order": [

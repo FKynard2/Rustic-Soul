@@ -45,6 +45,45 @@
       border-bottom: {{ section.settings.border_width }}px solid {{ section.settings.border_color }};
     }
   {% endif %}
+.dropbtn {
+  background-color: #A6A47D;
+  color: white;
+  padding: 26px;
+  font-size: 16px;
+  border-radius: 50%;
+  border: 1px white;
+  cursor: pointer;
+}
+.site-header-main-actions{
+  
+  display: inline-block;
+  
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 95px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 0px 26px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #ddd; padding: 0 26px; width: 100%;} 
+
+ .dropdown-content.mystyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.site-header-main-actions:hover .dropbtn {background-color: #a6a47dc7}
 {% endstyle %}
 
 {% capture header_nav %}
@@ -95,7 +134,7 @@
   <div class="non_profit_container">
     <div class="dark_owl"> {{ 'owl_Dark 1.png' | asset_url | img_tag: 'Dark Owl' }}</div>
     <p class= "non_profit"> {{section.settings.non_profit}}</p><br>
-    <a href='/' class="click_here"> HERE</a>
+    <a href='/pages/non-profit' class="click_here"> HERE</a>
   </div>
 
     <button class="site-header-button site-header-menu-button" href="#" data-menu-toggle>
@@ -216,30 +255,38 @@
           </span>
         </div>
       </button> {% endcomment %}
-
-      {% if shop.customer_accounts_enabled %}
-        <a class="site-header-button site-header-account-button" href="{{ routes.account_url }}">
-          <div class="site-header-icon site-header-account-icon">
-            {% include 'icon-library', id: 'icon-account' %}
-            <span class="visually-hidden">{{ 'general.accessibility.account' | t }}</span>
+    <div class='header-button'>
+      <button onclick="myFunction()" class="dropbtn"></button>
+      <button onclick="myFunction()" class="arrow-down">&#9698;</button>
+    </div>
+      <div id='myDIV' class='dropdown-content'>
+        {% if shop.customer_accounts_enabled %}
+          <a class="site-header-button site-header-account-button" href="{{ routes.account_url }}">
+            <div class="site-header-icon site-header-account-icon">
+              {% include 'icon-library', id: 'icon-account' %}
+              <span class="visually-hidden">{{ 'general.accessibility.account' | t }}</span>
+            </div>
+          </a>
+        {% endif %}
+        <a class="site-header-button site-header-cart-button" href="{{ routes.cart_url }}">
+          <div class="site-header-icon site-header-cart-icon">
+            <span
+              class="site-header-cart--count {% if cart.item_count > 0 %}visible{% endif %}"
+              data-header-cart-count="{% if cart.item_count > 0 %}{{ cart.item_count }}{% endif %}">
+            </span>
+            {% include 'icon-library', id: settings.header_cart_icon %}
+            <span class="visually-hidden">{{ 'general.accessibility.cart' | t }}</span>
           </div>
         </a>
-      {% endif %}
-
-      <a class="site-header-button site-header-cart-button" href="{{ routes.cart_url }}">
-        <div class="site-header-icon site-header-cart-icon">
-          <span
-            class="site-header-cart--count {% if cart.item_count > 0 %}visible{% endif %}"
-            data-header-cart-count="{% if cart.item_count > 0 %}{{ cart.item_count }}{% endif %}">
-          </span>
-
-          {% include 'icon-library', id: settings.header_cart_icon %}
-          <span class="visually-hidden">{{ 'general.accessibility.cart' | t }}</span>
-        </div>
-      </a>
+      </div>
     </div>
   </div>
-
+<script>
+function myFunction() {
+   var element = document.getElementById("myDIV");
+   element.classList.toggle("mystyle");
+}
+</script>
   {%- if section.settings.navigation_layout == 'below' -%}
     <div 
       class="

@@ -1,0 +1,43 @@
+{
+  "sections": {
+    "main": {
+      "type": "static-page",
+      "settings": {}
+    },
+    "contact": {
+      "type": "static-page-contact",
+      "disabled": true,
+      "settings": {
+        "background_color": "#a6a47d"
+      }
+    },
+    "1662643729c57faad5": {
+      "type": "dynamic-rich-text",
+      "blocks": {
+        "1662643729237df72c-0": {
+          "type": "text",
+          "settings": {
+            "title": "Non-Profit",
+            "text": "<p>Use this section to welcome customers to your store, say a bit about your brand, or share news and seasonal promotions.<\/p>",
+            "heading_size": "medium",
+            "text_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "1662643729237df72c-0"
+      ],
+      "settings": {
+        "width": "regular",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "contact",
+    "1662643729c57faad5"
+  ]
+}

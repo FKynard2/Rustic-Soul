@@ -4,6 +4,8 @@
 
   @param icon_class {string}
          Custom class to add to SVG
+
+romoved the icon title so the description doesent show in the headder romoved : chevron down, cart, account
 {% endcomment %}
 
 {%- capture icon -%}
@@ -25,7 +27,7 @@
 
   {% if id == 'icon-account' %}
     <svg {{ shared_svg_attrs }} width="24" height="24" viewBox="0 0 24 24" fill="none">
-      {{ icon_title }}
+      
       <path d="M20.5 19.5V21.525C20.5 21.5802 20.4552 21.625 20.4 21.625H3.6C3.54477 21.625 3.5 21.5802 3.5 21.525V19.5C3.5 18.3728 3.94777 17.2918 4.7448 16.4948C5.54183 15.6978 6.62283 15.25 7.75 15.25H16.25C17.3772 15.25 18.4582 15.6978 19.2552 16.4948C20.0522 17.2918 20.5 18.3728 20.5 19.5Z" stroke="currentColor" stroke-width="1.75"/>
       <path d="M12 11C14.3472 11 16.25 9.09721 16.25 6.75C16.25 4.40279 14.3472 2.5 12 2.5C9.65279 2.5 7.75 4.40279 7.75 6.75C7.75 9.09721 9.65279 11 12 11Z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/>
     </svg>
@@ -33,7 +35,7 @@
 
   {% if id == 'icon-cart' %}
     <svg {{ shared_svg_attrs }} width="24" height="24" viewBox="0 0 24 24" fill="none">
-      {{ icon_title }}
+      
       <path d="M4.28572 1.85718L5.13117 1.63172C5.02903 1.24869 4.68214 0.982178 4.28572 0.982178V1.85718ZM6.85715 17.7143L6.01581 17.4739C5.94038 17.7379 5.99325 18.022 6.15859 18.2412C6.32393 18.4604 6.58258 18.5893 6.85715 18.5893V17.7143ZM18.4286 13.8572L18.4984 14.7294C18.8104 14.7044 19.0853 14.5147 19.2193 14.2318L18.4286 13.8572ZM22.2857 5.71432L23.0765 6.0889L23.637 4.90557L22.3293 4.84041L22.2857 5.71432ZM0.857147 2.73218H4.28572V0.982178H0.857147V2.73218ZM6.87296 14.4739L6.01581 17.4739L7.69848 17.9547L8.55562 14.9547L6.87296 14.4739ZM6.85715 18.5893H19.2857V16.8393H6.85715V18.5893ZM7.78407 15.5865L18.4984 14.7294L18.3588 12.985L7.64451 13.8421L7.78407 15.5865ZM19.2193 14.2318L23.0765 6.0889L21.4949 5.33975L17.6378 13.4826L19.2193 14.2318ZM3.44026 2.08263L4.24026 5.08263L5.93117 4.63172L5.13117 1.63172L3.44026 2.08263ZM4.24026 5.08263L6.86883 14.9398L8.55975 14.4889L5.93117 4.63172L4.24026 5.08263ZM22.3293 4.84041L5.12927 3.98326L5.04217 5.73109L22.2422 6.58824L22.3293 4.84041Z" fill="currentColor"/>
       <path d="M7.6875 20.8C8.0672 20.8 8.375 21.1079 8.375 21.4875C8.375 21.8672 8.0672 22.175 7.6875 22.175C7.3078 22.175 7 21.8672 7 21.4875C7 21.1079 7.3078 20.8 7.6875 20.8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
       <path d="M18.6875 20.8C19.0672 20.8 19.375 21.1079 19.375 21.4875C19.375 21.8672 19.0672 22.175 18.6875 22.175C18.3078 22.175 18 21.8672 18 21.4875C18 21.1079 18.3078 20.8 18.6875 20.8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
@@ -42,7 +44,7 @@
 
   {% if id == 'icon-bag' %}
     <svg {{ shared_svg_attrs }} width="19" height="24" viewBox="0 0 19 24" fill="none">
-      {{ icon_title }}
+      
       <path d="M1.75 6.75H17.25V21.75H1.75V6.75Z" stroke="currentColor" stroke-width="1.5"/>
       <path d="M13 10.5V5.5C13 2.83333 11.4444 1.5 9.5 1.5C7.55556 1.5 6 2.83333 6 5.5L6 10.5" stroke="currentColor" stroke-width="1.5"/>
     </svg>
@@ -110,7 +112,7 @@
 
   {% if id == 'icon-chevron-down-small' %}
     <svg {{ shared_svg_attrs }} width="8" height="6" viewBox="0 0 8 6" fill="none">
-      {{ icon_title }}
+      
       <path class="icon-chevron-down-left" d="M4 4.5L7 1.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="square"/>
       <path class="icon-chevron-down-right" d="M4 4.5L1 1.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="square"/>
     </svg>
@@ -118,14 +120,14 @@
 
   {% if id == 'icon-chevron-down-thin' %}
     <svg {{ shared_svg_attrs }} width="8" height="5" viewBox="0 0 8 5" fill="none">
-      {{ icon_title }}
+      
       <path d="M0.5 0.5L4 4L7.5 0.5" stroke="currentColor" stroke-width="1.25"/>
     </svg>
   {% endif %}
 
   {% if id == 'icon-chevron-down' %}
     <svg {{ shared_svg_attrs }} width="14" height="8" viewBox="0 0 14 8" fill="none">
-      {{ icon_title }}
+      
       <path class="icon-chevron-down-left" d="M7 6.75L12.5 1.25" stroke="currentColor" stroke-width="1.75" stroke-linecap="square"/>
       <path class="icon-chevron-down-right" d="M7 6.75L1.5 1.25" stroke="currentColor" stroke-width="1.75" stroke-linecap="square"/>
     </svg>

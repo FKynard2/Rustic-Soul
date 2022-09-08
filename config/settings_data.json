@@ -6,7 +6,7 @@
     "container_border_radius": 3,
     "button_border_radius": 3,
     "form_border_radius": 3,
-    "color_header_background": "#ffffff",
+    "color_header_background": "#f4f4f4",
     "color_header_logo_text": "#000000",
     "color_header_cart_count_background": "#816339",
     "color_header_search_bar_border": "#777777",
@@ -330,6 +330,7 @@
       "static-basic-header": {
         "type": "static-basic-header",
         "settings": {
+          "non_profit": "WE'RE A NON-PROFIT! LEARN MORE",
           "sticky_header": false,
           "full_width_header": true,
           "menu": "main-menu",

@@ -72,9 +72,12 @@
           {%- endcapture -%}
 
           <li
-            class="{{ navmenu_item_classes | strip_newlines }}"
+          
+            class="{{ navmenu_item_classes | strip_newlines }} " 
+            
             {% if meganav_has_triggers and menu_item.links.size > 0 %}data-navmenu-trigger{% endif %}
             {% if is_mobile and linklists[menu_item.handle] != blank %}data-navmenu-parent{% endif %}
+            
             {{ block.shopify_attributes }}>
             <a href="{{ menu_item.url | downcase }}" class="navmenu-item-text navmenu-link-parent">
               {{ menu_item.title }}

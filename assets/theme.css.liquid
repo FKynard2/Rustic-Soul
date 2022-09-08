@@ -4734,6 +4734,7 @@ em strong {
 .site-header-main.site-header--full-width {
   width: 100%;
   max-width: 100%;
+  background-color: {{settings.color_header_background}}
 }
 
 .site-header-logo {
@@ -4896,6 +4897,7 @@ em strong {
 }
 .site-header-cart-button svg {
   transition: margin 0.15s;
+  min-width: 24px;
 }
 
 .site-header-cart--count {
@@ -5004,6 +5006,7 @@ em strong {
   top: -1px;
   right: -3px;
   transform: rotate(90deg);
+  
 }
 .site-navigation .navmenu-icon svg {
   display: block;
@@ -5063,7 +5066,11 @@ em strong {
 }
 .site-navigation .navmenu-depth-2 {
   margin-left: -0.625rem;
+  
+
 }
+
+
 .site-navigation .navmenu-depth-2 .navmenu-link {
   font-family: {{ fonts_type_body_family }};
   font-style: {{ fonts_type_body_style }};
@@ -5147,7 +5154,7 @@ em strong {
 }
 
 .navmenu-item-parent .meganav-editing-block, .navmenu-item-parent.open > .navmenu-submenu {
-  z-index: 1;
+  z-index: 100;
   display: block;
 }
 .navmenu-item-parent .navmenu-submenu.meganav-editing-block {
@@ -6053,7 +6060,7 @@ em strong {
 .site-header-main-actions {
     position: absolute;
     display: flex;
-    right: 0;
+    right: 50px;
     padding-left: {{ settings.type_size_base | times: 1.25 | divided_by: 16.0 | append: 'rem' }};
     justify-content: center;
     transition: opacity 0.4s;
@@ -18880,6 +18887,7 @@ shopify-payment-terms {
   width: 100%;
   margin: 0 auto;
   transform: none;
+  max-width: 500px;
 }
 
 [data-lazy-loading-disabled] [data-product-gallery-image-crop][data-product-gallery-aspect-ratio=short] .product-gallery--loaded-image,
@@ -22050,4 +22058,17 @@ summary::after {
   details[open] summary::after {
     transform: translateY(-50%) rotate(-90deg);
   }
+}
+
+.header-btn {
+  display: flex;
+}
+
+.arrow-down {
+    border: none;
+    transform: rotate(45deg);
+    margin-left: 16px;
+    color: #A6A47D;
+    background: transparent;
+    cursor: pointer;
 }
