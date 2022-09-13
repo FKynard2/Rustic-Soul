@@ -81,7 +81,32 @@
     }
   {% endstyle %}
 
+   <div class= 'collection-top-text'>
+   {% if section.settings.subheading != blank %}
+        <div class="home-section--subheading">
+          {{ section.settings.subheading_top }}
+        </div>
+      {% endif %}
+    {% if section.settings.title != blank or section.settings.subheading != blank %}
+      <div class="home-section--title-container" >
+      {% if section.settings.title != blank %}
+        <h2 class="home-section--title">
+          {{ section.settings.title | escape }}
+        </h2>
+      {% endif %}
+   
+        {% if section.settings.subheading != blank %}
+          <div class="home-section--subheading shop-section-flex">
+            {{ section.settings.subheading }}
+            <a href="/" class="shop-achor-arrow">&#8594;</a>
+          </div>
+        {% endif %}
+   </div>
+    {% endif %}
+ </div>
+
   {% capture banner %}
+  
     <li
       class="
         productgrid--item
@@ -174,7 +199,30 @@
     "
     data-layout="{{ section.settings.product_layout }}"
   >
+  <div class= 'collection-top-text'>
+   {% if section.settings.subheading != blank %}
+        <div class="home-section--subheading">
+          {{ section.settings.subheading_top }}
+        </div>
+      {% endif %}
     {% if section.settings.title != blank or section.settings.subheading != blank %}
+      <div class="home-section--title-container" >
+      {% if section.settings.title != blank %}
+        <h2 class="home-section--title">
+          {{ section.settings.title | escape }}
+        </h2>
+      {% endif %}
+   
+        {% if section.settings.subheading != blank %}
+          <div class="home-section--subheading shop-section-flex">
+            {{ section.settings.subheading }}
+            <a href="/" class="shop-achor-arrow">&#8594;</a>
+          </div>
+        {% endif %}
+   </div>
+    {% endif %}
+ </div>
+    {% comment %} {% if section.settings.title != blank or section.settings.subheading != blank %}
       <div class="home-section--title-container" >
       {% if section.settings.title != blank %}
         <h2 class="home-section--title">
@@ -187,7 +235,7 @@
         </div>
       {% endif %}
       </div>
-    {% endif %}
+    {% endif %} {% endcomment %}
 
     <ul
       class="
@@ -265,6 +313,11 @@
   "class": "featured-collection--section",
   "max_blocks": 1,
   "settings": [
+     {
+      "type": "richtext",
+      "id": "subheading_top",
+      "label": "Subheading Top"
+    },
     {
       "type": "text",
       "id": "title",
@@ -326,10 +379,10 @@
       "type": "range",
       "id": "product_count",
       "label": "Number of products",
-      "min": 5,
+      "min": 3,
       "max": 25,
-      "step": 5,
-      "default": 10
+      "step": 1,
+      "default": 3 
     },
     {
       "type": "select",
@@ -560,7 +613,8 @@
   "templates": [
     "index",
     "product",
-    "page"
+    "page",
+    "collection" 
   ]
 }
 

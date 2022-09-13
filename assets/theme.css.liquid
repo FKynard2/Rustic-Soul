@@ -8358,6 +8358,7 @@ em strong {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 45px;
 }
 .logolist--inner > * {
   margin-right: 0.625rem;
@@ -14175,7 +14176,7 @@ li.navmenu-meganav--image-container {
 }
 @media screen and (min-width: 860px) {
   .home-section--subheading {
-    margin: 0 15vw;
+    margin: 0 0vw;
   }
 }
 .home-section--subheading p {
@@ -22071,4 +22072,89 @@ summary::after {
     color: #A6A47D;
     background: transparent;
     cursor: pointer;
+}
+
+{% comment %} this is for the state pages {% endcomment %}
+
+.dynamic-collection-list--item-info {
+  display: none;
+}
+
+.collection--item-image img {
+  max-width: 450px;
+  height: 520px; 
+  object-fit: cover;
+}
+
+.shop-section-flex {
+    display: flex;
+    justify-content: left;
+    gap: 60px;
+}
+
+.shop-achor-arrow {
+    text-decoration: none;
+    font-size: 32px;
+    margin: -16px;
+}
+
+.collection-top-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.collection-top-text .home-section--title-container {
+  padding: 0 0; 
+}
+.collection-top-text .home-section--title-container .home-section--title {
+  font-size: 48px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+
+.button-side-by-side-black {
+    padding: 13px 33px 23px 19px;
+}
+.button-side-by-side-gold {
+    padding: 13px 198px 23px 50px;
+}
+
+.button-side-by-side-gold {
+  background-color: #a6a47d;
+  border: 1px solid rgba(255,255,255,0.5);
+  
+}
+.button-side-by-side-black {
+  background-color: #424141;
+}
+
+.gold  {
+  margin-left: 52px;
+}
+.black  {
+  margin-left: 20px;
+}
+
+{% comment %} style for the go button {% endcomment %}
+
+.search {
+    border: 1px solid #A6A47D;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 100%;
+    height: 48px;
+    padding-right: 30px;
+    color: #000;
+    padding-left: 62px;
+    font-family: Slate,sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    text-transform: uppercase;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: "";
 }

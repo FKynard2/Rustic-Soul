@@ -48,9 +48,25 @@ $(document).ready(function(){
     }
 
   });
-  $('#stateCollectionDropdown select').on('change',function(){
-    var newUrl = "/collections/" + $(this).val();
+  $('#stateCollectionDropdown a').on('click', function () {
+    var s = document.getElementById('state').value;
+    var newUrl = "/collections/" + s;
     console.log($(this).val());
     window.location.href = newUrl;
   });
 });
+
+
+$('.js-searchBox').searchBox();
+$('.js-searchBox').searchBox({
+  mode: 2
+});
+$('.js-searchBox').searchBox({
+  optionMaxSize: 50
+});
+$('.js-searchBox').searchBox({
+  elementWidth: '250'
+});
+$('.js-searchBox').searchBox({
+  selectCallback: null
+}); 

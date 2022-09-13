@@ -130,10 +130,14 @@
         </div>
       {% endif %}
       <div id="stateCollectionDropdown" class="tabbed-search-content tabbed-search-content-active ">
-        <form action="" class='custom-select'>
+      
         
-          <select name="" id=""  >
-          <option value=''class="option-1">BEGIN TYPING YOUR STATE HERE</option>
+        <form action="" class='custom-select' >
+        
+        
+        {% comment %} <input type="text" placeholder='BEGIN TYPING YOUR STATE HERE' class='search'> {% endcomment %}
+          <select name="lang" id="state"  class='js-searchBox' > 
+          
 
            
              {% for c in collections %}
@@ -145,9 +149,12 @@
           
           
           </select>
-           <span class='go-button'>go</span>
+           <a  class='go-button'>go</a>
+          
         </form>
       </div>
+      <script src="/path/to/cdn/jquery.min.js"></script>
+<script src="/path/to/dist/js/jquery-searchbox.js"></script>
 <div id="liveSearch" class="tabbed-search-content">
     {%
       include 'live-search-form',

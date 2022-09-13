@@ -374,6 +374,7 @@ a#artist-name {
   background: transparent;
   border: none;
   border-bottom: 3px solid;
+  padding-bottom: 25px;
 }
 .artist-newsletter-section .form-field-title {
   font-size: 20.7px;
@@ -404,6 +405,7 @@ a#artist-name {
 }
 .artist-newsletter-section .home-section--title-container {
   margin-bottom: 2rem;
+  margin-left: -10px;
 }
 
 @media (max-width: 719px) {
@@ -828,6 +830,7 @@ a#artist-name {
 
 .form-field-title {
   display: flex;
+  margin-left: -15px;
 }
 .form-field-title img {
   padding-right: 10px;
@@ -928,7 +931,9 @@ a#artist-name {
 .custom-select{
   position: relative;
 }
-
+select:focus ~ .go-button {
+  display: block;
+}
 .go-button {
   background: #D28A30;
   position: absolute;
@@ -941,6 +946,7 @@ a#artist-name {
   font-weight: 500;
   margin-left: -89px;
   border: none;
+ cursor: pointer;
 }
 
 

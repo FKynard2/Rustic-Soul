@@ -57,6 +57,7 @@
   #shopify-section-{{section.id}} .dynamic-collection-list--item-info {
     text-align: {{ section.settings.text_alignment }};
   }
+  
 {% endstyle %}
 
 <script
@@ -67,20 +68,30 @@
 </script>
 
 <section class="dynamic-collection-list--container">
-  {% if section.settings.title != blank or section.settings.subheading != blank %}
-    <div class="home-section--title-container" >
-    {% if section.settings.title != blank %}
-      <h2 class="home-section--title">
-        {{ section.settings.title | escape }}
-      </h2>
+ <div class= 'collection-top-text'>
+   {% if section.settings.subheading != blank %}
+        <div class="home-section--subheading">
+          {{ section.settings.subheading_top }}
+        </div>
+      {% endif %}
+    {% if section.settings.title != blank or section.settings.subheading != blank %}
+      <div class="home-section--title-container" >
+      {% if section.settings.title != blank %}
+        <h2 class="home-section--title">
+          {{ section.settings.title | escape }}
+        </h2>
+      {% endif %}
+   
+        {% if section.settings.subheading != blank %}
+          <div class="home-section--subheading shop-section-flex">
+            {{ section.settings.subheading }}
+            <a href="/" class="shop-achor-arrow">&#8594;</a>
+          </div>
+        {% endif %}
+   </div>
     {% endif %}
-    {% if section.settings.subheading != blank %}
-      <div class="home-section--subheading">
-        {{ section.settings.subheading }}
-      </div>
-    {% endif %}
-    </div>
-  {% endif %}
+ </div>
+  
 
   {%- assign label_style = section.settings.label_style -%}
   {%- assign text_alignment = section.settings.text_alignment-%}
@@ -163,6 +174,11 @@
   "name": "Collection list",
   "class": "dynamic-collection-list--section",
   "settings": [
+    {
+      "type": "richtext",
+      "id": "subheading_top",
+      "label": "Subheading Top"
+    },
     {
       "type": "text",
       "id": "title",
@@ -455,7 +471,8 @@
   "templates": [
     "index",
     "product",
-    "page"
+    "page",
+    "collection"
   ]
 }
 
